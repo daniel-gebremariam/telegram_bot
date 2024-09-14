@@ -5,7 +5,6 @@ from telegram.ext import Application, CommandHandler, MessageHandler, CallbackCo
 from telegram.ext import CallbackQueryHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-PORT = os.getenv('PORT', 80)
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
