@@ -126,5 +126,7 @@ def main() -> None:
 
     application.run_polling()
 
+PORT = int(os.getenv('PORT', 80))
+
 if __name__ == '__main__':
-    main()
+    app.run(host='0.0.0.0', port=PORT)
